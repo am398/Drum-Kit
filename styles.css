@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #283149;
+  background-color: #702ebc;
 }
 
 h1 {
@@ -8,8 +8,14 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
-
 }
+#instr{
+  font-size:x-large ;
+  color: #10ee2a;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+}
+
 
 footer {
   color: #DBEDF3;
