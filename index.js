@@ -3,12 +3,14 @@ var nbuttons = document.querySelectorAll(".drum").length;
 for (var i = 0; i < nbuttons; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
         Player(this.innerHTML);
+        ButtonAnimator(this.innerHTML);
     });
 
 
 }
 document.addEventListener("keydown", function (event) {
     Player(event.key);
+    ButtonAnimator(event.key);
 
 });
 function Player(input) {
@@ -52,5 +54,15 @@ function Player(input) {
 
 
     }
+
+}
+
+function ButtonAnimator(input) {
+
+    var activeButton = document.querySelector("." + input);
+    activeButton.classList.add("pressed");
+
+    setTimeout(function () { activeButton.classList.remove("pressed") }, 100);
+
 
 }
